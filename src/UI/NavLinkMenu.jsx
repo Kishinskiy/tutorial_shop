@@ -1,5 +1,7 @@
-export default function NavLinkMenu({to, children}) {
+import {NavLink} from "react-router-dom";
+
+export default function NavLinkMenu({ to, children }) {
     return (
-        <NavLinkMenu className="text-2xl font-semibold text-blue-600 hover:text-red-400;" to={to}>{children}</NavLinkMenu>
+        <NavLink className="text-2xl font-semibold text-blue-600 hover:text-red-400;" to={to}>{children}</NavLink>
     )
 }

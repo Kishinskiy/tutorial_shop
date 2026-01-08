@@ -7,9 +7,9 @@ export default function Header() {
             <img className="h-8" src="/logo.svg" alt="logo"/>
             <nav>
                 <ul className="flex space-x-8 gap-8">
-                    <li className="mb-4"><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to={"/about"}> About</NavLink></li>
-                    <li><NavLink to={"/cart"}> Cart</NavLink></li>
+                    <li className="mb-4"><NavLinkMenu to={"/"}>Home</NavLinkMenu></li>
+                    <li><NavLinkMenu to={"/about"}> About</NavLinkMenu></li>
+                    <li><NavLinkMenu to={"/cart"}> Cart</NavLinkMenu></li>
                 </ul>
             </nav>
         </header>
