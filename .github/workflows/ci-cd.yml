@@ -132,11 +132,8 @@ jobs:
       - name: Deploy with Helm
         id: deploy
         run: |
-          helm upgrade --install tutorial-shop ./helm/tutorial-shop \
-            --namespace default \
-            --create-namespace \
-            --set image.repository=${{ env.REGISTRY }}/kishinskii/${{ env.IMAGE_NAME }} \
-            --set image.tag=${{ steps.image-tag.outputs.tag }} \
+          helm upgrade --install webapp ./helm/tutorial-shop \
+            --set image.repository=kishinskii/tutorial_shop \
             --set image.pullPolicy=Always \
             --wait \
             --timeout 5m
