@@ -149,5 +149,5 @@ jobs:
 
       - name: Verify deployment
         run: |
-          kubectl rollout status deployment/tutorial-shop -n default --timeout=5m
-          kubectl get pods -n default -l app.kubernetes.io/name=tutorial-shop
+          kubectl rollout status deployment/webapp-tutorial-shop -n default --timeout=5m
+          kubectl get pods -n default -l app.kubernetes.io/name=webapp-tutorial-shop
