@@ -1,0 +1,13 @@
+apiVersion: v2
+name: tutorial-shop
+description: A Helm chart for Tutorial Shop application
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - shop
+  - ecommerce
+  - react
+home: https://github.com/yourusername/tutorial_shop
+maintainers:
+  - name: Tutorial Shop Team

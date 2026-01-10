@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import NavLinkMenu from "../UI/NavLinkMenu.jsx";
+import logo from "../assets/images/logo.svg";
 
 export default function Header() {
     return (
@@ -9,7 +10,7 @@ export default function Header() {
                     <Link to="/" className="flex items-center group">
                         <img 
                             className="h-10 w-auto transition-transform duration-300 group-hover:scale-110" 
-                            src="/logo.svg" 
+                            src={logo}
                             alt="logo"
                         />
                     </Link>
