@@ -30,13 +30,13 @@ service:
   targetPort: 80
 
 ingress:
-  enabled: false
+  enabled: true
   className: "nginx"
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: tutorial-shop.local
+    - host: shop.kishinskiy.ru
       paths:
         - path: /
           pathType: Prefix
