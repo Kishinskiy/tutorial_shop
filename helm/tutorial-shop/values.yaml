@@ -2,11 +2,13 @@
 replicaCount: 2
 
 image:
-  repository: tutorial-shop
+  repository: kishinskii/tutorial-shop
   pullPolicy: IfNotPresent
   tag: "latest"
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: regcred
+
 nameOverride: ""
 fullnameOverride: ""
 
@@ -21,12 +23,6 @@ podSecurityContext: {}
   # fsGroup: 2000
 
 securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
 
 service:
   type: ClusterIP

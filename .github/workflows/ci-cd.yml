@@ -135,7 +135,7 @@ jobs:
           helm upgrade --install tutorial-shop ./helm/tutorial-shop \
             --namespace default \
             --create-namespace \
-            --set image.repository=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }} \
+            --set image.repository=${{ env.REGISTRY }}/kishinskii/${{ env.IMAGE_NAME }} \
             --set image.tag=${{ steps.image-tag.outputs.tag }} \
             --set image.pullPolicy=Always \
             --wait \
