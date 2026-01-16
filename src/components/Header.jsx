@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import NavLinkMenu from "../UI/NavLinkMenu.jsx";
 import logo from "../assets/images/logo.svg";
-import Button from "../Components/Button.jsx";
+import Button from "../components/Button.jsx";
 
 export default function Header() {
     return (
