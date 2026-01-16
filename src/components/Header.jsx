@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import NavLinkMenu from "../UI/NavLinkMenu.jsx";
 import logo from "../assets/images/logo.svg";
+import Button from "../Components/Button.jsx";
 
 export default function Header() {
     return (
@@ -25,6 +26,7 @@ export default function Header() {
                             <li>
                                 <NavLinkMenu to={"/cart"}>Cart</NavLinkMenu>
                             </li>
+                            <li><Button>LogIn</Button></li>
                         </ul>
                     </nav>
                 </div>
