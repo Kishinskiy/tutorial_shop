@@ -1,5 +1,5 @@
-export default function Button({children}) {
-    return(
-        <button className="text-white bg-brand box-border border border-amber-50 rounded-2xl hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">{children}</button>
+export default function Button({variant, handleClick, children}){
+    return (
+        <button className={variant} onClick={handleClick}>{children}</button>
     )
 }
