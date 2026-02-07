@@ -39,8 +39,7 @@ export default function Header() {
                             <li>
                                 <NavLinkMenu to={"/cart"}>Cart</NavLinkMenu>
                             </li>
-                            <li><Button variant="border px-3 py-1 border-back rounded-md text-white font-bold
-" handleClick={handleLoginClick}>LogIn</Button></li>
+                            <li><Button variant="border px-3 py-1 border-back rounded-md text-white font-bold" handleClick={handleLoginClick}>LogIn</Button></li>
                         </ul>
                     </nav>
                 </div>
